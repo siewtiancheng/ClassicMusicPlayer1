@@ -1,0 +1,25 @@
+package com.example.classicmusicplayer1;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.View;
+import com.chibde.visualizer.CircleBarVisualizer;
+
+
+import android.os.Bundle;
+
+public class PlayerActivity extends AppCompatActivity {
+    public MediaPlayer mediaPlayer;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_player);
+    }
+
+    public void circleBarVisualization(View view) {
+    }
+}
