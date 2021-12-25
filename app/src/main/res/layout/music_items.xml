@@ -23,4 +23,5 @@
         android:textColor="@color/richblack"
         android:id="@+id/music_file_name"/>
 
+
 </RelativeLayout>

@@ -15,8 +15,6 @@ public class MusicFiles {
         this.duration = duration;
     }
 
-    public MusicFiles() {
-    }
 
     public String getPath() {
         return path;
@@ -57,4 +55,5 @@ public class MusicFiles {
     public void setDuration(String duration) {
         this.duration = duration;
     }
+
 }
