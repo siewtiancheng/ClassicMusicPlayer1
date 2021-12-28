@@ -3,6 +3,7 @@ package com.example.classicmusicplayer1;
 import static com.example.classicmusicplayer1.MainActivity.musicFiles;
 import static com.example.classicmusicplayer1.MainActivity.repeatBoolean;
 import static com.example.classicmusicplayer1.MainActivity.shuffleBoolean;
+import static com.example.classicmusicplayer1.MusicAdapter.mFiles;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -376,7 +377,7 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
 
     private void getIntentMethod() {
         position = getIntent().getIntExtra("position", -1);
-        listSongs = musicFiles;
+        listSongs = mFiles;
         if (listSongs != null)
         {
             playPauseBtn.setImageResource(R.drawable.ic_baseline_pause);
