@@ -13,7 +13,9 @@
         android:theme="@style/Theme.ClassicMusicPlayer1">
         <activity
             android:name=".PlayerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

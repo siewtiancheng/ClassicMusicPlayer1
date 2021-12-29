@@ -37,7 +37,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnCompletionListener {
 
     TextView song_name, artist_name, duration_played, duration_total;
-    ImageView nextBtn, prevBtn, backBtn, shuffleBtn, repeatBtn;
+    ImageView nextBtn, prevBtn, shuffleBtn, repeatBtn;
     CircleImageView cover_art;
     FloatingActionButton playPauseBtn;
     SeekBar seekBar;
@@ -52,6 +52,7 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initView();
         getIntentMethod();
         song_name.setText(listSongs.get(position).getTitle());
@@ -406,7 +407,6 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
         duration_total = findViewById(R.id.durationTotal);
         nextBtn = findViewById(R.id.id_next);
         prevBtn = findViewById(R.id.id_prev);
-        backBtn = findViewById(R.id.back_btn);
         shuffleBtn = findViewById(R.id.id_shuffle);
         repeatBtn = findViewById(R.id.id_repeat);
         cover_art = findViewById(R.id.cover_art);
